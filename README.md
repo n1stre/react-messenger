@@ -44,7 +44,6 @@ Runs [`eslint`](https://eslint.org/) for all the `.js`, `.ts`, `.tsx` files with
 Runs unit tests specs for all the files matching `"**/*.(test|spec).(js|ts|tsx)"` regex. Launches [`jest`]() as a test runner in the interactive watch mode. Additionally `npm run test:cov` can be used to collect code coverage and place it into `tests/__coverage__`.
 
 ## Technologies
-Webpack configura
 For the application core there are only five dependencies are being used:
 
 ```json
@@ -63,5 +62,3 @@ out of which:
 
 - `date-fns` is used as a lighter in size alternative to `moment`
 - `react-query` as a powerfull way to handle data fetching in the app.
-
-For the actual commits graph I've decided to move along with my own implementation only in sake of personal interest.
