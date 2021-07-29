@@ -1,0 +1,19 @@
+{
+  "rootDir": "..",
+  "roots": ["<rootDir>/src/", "<rootDir>/tests/"],
+
+  "testEnvironment": "jsdom",
+  "testMatch": ["**/*.(test|spec).(js|ts|tsx)"],
+  "testPathIgnorePatterns": ["/node_modules/"],
+
+  "moduleFileExtensions": ["ts", "tsx", "js", "jsx"],
+  "moduleNameMapper": {
+    "^\\~/(.*)$": "<rootDir>/src/$1",
+    "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/tests/__mocks__/file.js",
+    "\\.(css|scss|less)$": "<rootDir>/tests/__mocks__/style.js"
+  },
+
+  "collectCoverageFrom": ["src/**/*.ts*"],
+  "coverageDirectory": "<rootDir>/tests/__coverage__/",
+  "coveragePathIgnorePatterns": ["/node_modules/"]
+}

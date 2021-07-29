@@ -1,0 +1,17 @@
+# Distribution
+dist
+dist_website
+out
+build
+node_modules
+coverage
+
+# Logs
+*.log*
+logs
+
+# Environment
+*.env
+
+# Misc
+.DS_Store
